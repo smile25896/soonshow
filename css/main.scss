@@ -57,7 +57,7 @@ header {
     position: relative;
     z-index: 1;
     padding: 12px 0px;
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 1px;
     color: #6f6f6f;
     background-color: #f5f5f5;
@@ -69,11 +69,11 @@ header {
     background-color: #f5f5f5;
 
     .container {
-      padding: 40px 0 35px;
+      padding: 51px 0 35px;
       display: flex;
     }
     .logo-box {
-      width: 250px;
+      width: 350px;
       margin-right: 52px;
       img {
         width: 100%;
@@ -81,7 +81,7 @@ header {
     }
 
     .search-box {
-      width: 520px;
+      width: 584px;
       .search-bar {
         position: relative;
         height: 47px;
@@ -181,8 +181,8 @@ header {
 
     .member-box {
       position: absolute;
-      right: 0px;
-      top: 16px;
+      top: 31px;
+      right: 0;
       margin-left: 100px;
       font-size: 13px;
       .greeting {
@@ -193,8 +193,8 @@ header {
         }
       }
       .option-box {
-        margin-top: 10px;
-        width: 320px;
+        margin-top: 4px;
+        width: 288px;
         height: 113px;
         padding: 0px 23px 0px 21px;
         border-top-left-radius: 10px;

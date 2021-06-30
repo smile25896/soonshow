@@ -28,18 +28,18 @@ header .top-header {
   background-color: #f5f5f5;
 }
 header .top-header .container {
-  padding: 40px 0 35px;
+  padding: 51px 0 35px;
   display: flex;
 }
 header .top-header .logo-box {
-  width: 250px;
+  width: 350px;
   margin-right: 52px;
 }
 header .top-header .logo-box img {
   width: 100%;
 }
 header .top-header .search-box {
-  width: 520px;
+  width: 584px;
 }
 header .top-header .search-box .search-bar {
   position: relative;
@@ -126,8 +126,8 @@ header .top-header .search-box .suggestion-box a:hover {
 }
 header .top-header .member-box {
   position: absolute;
-  right: 0px;
-  top: 16px;
+  top: 31px;
+  right: 0;
   margin-left: 100px;
   font-size: 13px;
 }
@@ -138,8 +138,8 @@ header .top-header .member-box .greeting .username {
   color: #d42020;
 }
 header .top-header .member-box .option-box {
-  margin-top: 10px;
-  width: 320px;
+  margin-top: 4px;
+  width: 288px;
   height: 113px;
   padding: 0px 23px 0px 21px;
   border-top-left-radius: 10px;
