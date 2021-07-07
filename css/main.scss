@@ -5,6 +5,17 @@ body {
   line-height: 1;
 }
 
+.only-pc {
+  @media (max-width: 575px) {
+    display: none;
+  }
+}
+
+.two-columns {
+  display: flex;
+  justify-content: flex-start;
+}
+
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
@@ -213,10 +224,10 @@ header {
             border-radius: 50%;
             color: #eb5b5b;
             text-align: center;
-            padding-top: 12px;
 
             i {
               font-size: 23px;
+              line-height: 50px;
             }
           }
           .title {
@@ -291,6 +302,356 @@ header {
     }
     .slick-next {
       right: 10px;
+    }
+  }
+}
+
+.main-box {
+  background-color: #f5f5f5;
+  padding: 32px 0;
+
+  & .container > .title-box {
+    text-align: center;
+
+    .title {
+      text-align: center;
+      font-family: LaoMN;
+      font-size: 45.5px;
+      font-weight: bold;
+      color: #004a98;
+    }
+
+    .second-title {
+      font-size: 25px;
+      font-weight: 500;
+      letter-spacing: 1.25px;
+      color: #a3a3a3;
+    }
+
+    .line {
+      width: 81px;
+      height: 6px;
+      background-color: #004a98;
+      margin: 17px auto 0;
+    }
+  }
+
+  .contact-box {
+    display: flex;
+    padding-top: 66px;
+    margin: 0 -15px;
+    justify-content: center;
+
+    .contact-item {
+      position: relative;
+      flex: 1;
+      padding-top: 28%;
+      @media (max-width: 1400px) {
+        padding-top: 32%;
+      }
+      @media (max-width: 1200px) {
+        padding-top: 38%;
+      }
+      margin: 0 15px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0px 4px 1.9px 0.1px rgba(4, 0, 0, 0.35);
+      border-radius: 5px;
+      max-width: 462.1px;
+      max-height: 320.4px;
+
+      &:first-child {
+        background-image: url("../images/contact-pink.png");
+      }
+      &:nth-child(2) {
+        background-image: url("../images/contact-blue.png");
+        button {
+          background-color: #005bac;
+        }
+        .number {
+          color: #005bac;
+        }
+      }
+
+      .content-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+
+      .title {
+        margin-top: calc(50% - 100px);
+        font-family: DFLiHeiStd-W7;
+        font-size: 56px;
+        font-weight: bold;
+        letter-spacing: 5.6px;
+        color: #ffffff;
+        width: 100%;
+        @media (max-width: 991px) {
+          font-size: 36px;
+          margin-top: calc(50% - 72px);
+        }
+        @media (max-width: 767px) {
+          font-size: 26px;
+          margin-top: calc(50% - 52px);
+        }
+      }
+
+      button {
+        margin-top: 5%;
+        padding: 10px 27px;
+        background-color: #ec6d6d;
+        border: 5px solid white;
+        font-family: DFLiHeiStd-W7;
+        font-size: 36px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 51px;
+        @media (max-width: 991px) {
+          font-size: 25px;
+          padding: 7px 19px;
+        }
+        @media (max-width: 767px) {
+          font-size: 20px;
+          padding: 4px 12px;
+        }
+      }
+
+      .number {
+        position: absolute;
+        bottom: 1%;
+        width: 100%;
+        text-align: center;
+        font-family: GillSansMT;
+        font-size: 55.5px;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 1.14;
+        letter-spacing: 0.56px;
+        text-align: center;
+        color: #ec6d6d;
+        @media (max-width: 991px) {
+          font-size: 36px;
+          bottom: 2%;
+        }
+        @media (max-width: 767px) {
+          font-size: 26px;
+          bottom: 2%;
+        }
+      }
+    }
+  }
+
+  .count-down-box {
+    display: flex;
+    justify-content: center;
+    .time-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 72px;
+      height: 82px;
+      margin: 28px 6px 25px 0;
+      border-radius: 3.8px;
+      color: white;
+      background-color: #d41d40;
+      font-size: 19.5px;
+      text-align: center;
+
+      .value {
+        display: block;
+        font-size: 34.5px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  .group-buying-box {
+    margin: 0 auto;
+    white-space: nowrap;
+    width: 978px;
+    // overflow-x: auto;
+    @media (max-width: 1220px) {
+      width: 652px;
+    }
+    @media (max-width: 840px) {
+      width: 326px;
+    }
+    .item {
+      display: inline-block;
+      width: 316px;
+      border-radius: 5px;
+      border: solid 1px #aaaaaa;
+      overflow: hidden;
+      margin: 0 3px;
+      .photo {
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 239px;
+        background-color: #ebe3e4;
+
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .info-box {
+        padding: 14px 43px;
+        .user-photo {
+          width: 93px;
+          height: 93px;
+          min-width: 93px;
+          min-height: 93px;
+          border-radius: 47px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .user-content {
+          flex: 1;
+          margin-left: 5px;
+          margin-right: 8px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+
+        .user-tag-box {
+          display: flex;
+          text-align: right;
+          flex-direction: column;
+          align-items: flex-end;
+
+          .tag {
+            display: block;
+            padding: 2px 8px;
+            margin-bottom: 6px;
+            background-color: #005bac;
+
+            font-size: 11px;
+            // text-align: justify;
+            color: #ffffff;
+
+            &:nth-child(2n) {
+              background-color: transparent;
+              border: 1px solid #005bac;
+              color: #005bac;
+            }
+          }
+        }
+
+        .user-name {
+          font-family: NotoSansCJKtc;
+          font-size: 19.5px;
+          letter-spacing: 1.46px;
+          color: #005bac;
+        }
+        .popularity-box {
+          position: relative;
+          width: 238px;
+          height: 49px;
+          margin-top: 17px;
+          margin-bottom: 8px;
+          border: solid 1.1px #7a7a7a;
+          text-align: center;
+          padding-top: 10px;
+
+          .title {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            padding: 0 3px;
+            display: inline-block;
+            font-family: NotoSansCJKtc;
+            font-size: 19px;
+            font-weight: 500;
+            letter-spacing: 0.19px;
+            text-align: justify;
+            color: #ff005c;
+            background-color: #f5f5f5;
+          }
+
+          .value {
+            font-family: DFLiHeiStd-W5;
+            font-size: 34.5px;
+            font-weight: 500;
+            letter-spacing: -0.17px;
+            text-align: justify;
+            color: #ff005c;
+          }
+        }
+
+        .text {
+          font-size: 13px;
+          line-height: 1.38;
+          letter-spacing: 0.98px;
+          color: #1f1f1f;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          max-height: 51px;
+          overflow: hidden;
+        }
+      }
+
+      .product-box {
+        text-align: right;
+        .product-name {
+          margin: 0 29px;
+          font-size: 22.5px;
+          font-weight: 500;
+          letter-spacing: -0.11px;
+          margin-bottom: 7px;
+          margin-top: 32px;
+          color: #2a2a2a;
+
+          .tag {
+            display: inline-block;
+            padding: 6px 4px 6px 7px;
+            border: solid 0.8px #2a2a2a;
+            color: #2a2a2a;
+            font-size: 13px;
+            margin-bottom: 10px;
+          }
+        }
+
+        .black-bottom {
+          position: relative;
+          padding: 14px 14px 11px;
+          opacity: 0.88;
+          background-color: #000000;
+
+          a {
+            display: inline-block;
+            padding: 16px 8px 16px 13px;
+            border-radius: 15px;
+            background-color: #d04545;
+            color: white;
+            font-size: 26px;
+            font-weight: 600;
+            text-decoration: none;
+          }
+
+          .product-img {
+            width: 146px;
+            height: 94px;
+            position: absolute;
+            left: 16px;
+            bottom: 31px;
+          }
+        }
+      }
     }
   }
 }
