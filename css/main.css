@@ -418,6 +418,9 @@ header .single-item .slick-next {
     width: 326px;
   }
 }
+.main-box .group-buying-box .slick-arrow:before {
+  color: #888;
+}
 .main-box .group-buying-box .item {
   display: inline-block;
   width: 316px;

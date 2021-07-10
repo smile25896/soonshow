@@ -481,6 +481,10 @@ header {
     @media (max-width: 840px) {
       width: 326px;
     }
+
+    .slick-arrow:before {
+      color: #888;
+    }
     .item {
       display: inline-block;
       width: 316px;
