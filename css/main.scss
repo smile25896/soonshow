@@ -16,6 +16,10 @@ body {
   }
 }
 
+.force-one-line {
+  white-space: nowrap;
+}
+
 .two-columns {
   display: flex;
   justify-content: flex-start;
