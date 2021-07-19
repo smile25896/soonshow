@@ -1204,6 +1204,27 @@ header .single-item .slick-next {
   max-width: 100%;
 }
 
+.share-slider {
+  position: relative;
+  margin-top: 21px;
+  padding: 23px 30px;
+  background-color: white;
+}
+.share-slider .share-item .row {
+  position: relative;
+  width: 100%;
+}
+.share-slider .share-item .row {
+  --bs-gutter-x: 0;
+}
+.share-slider .share-item .col {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50%;
+  margin: 1px;
+}
+
 .fa-truck {
   transform: scaleX(-1);
   color: #ccc;

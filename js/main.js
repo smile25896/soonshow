@@ -48,6 +48,21 @@ $(document).ready(function () {
     ],
   });
 
+  $(".share-slider").slick({
+    autoplay: false,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 766,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
   setCountdownInterval("#countdown1", new Date("2021/08/11 18:00:00"));
   setCountdownInterval("#countdown2", new Date("2021/08/11 18:00:00"));
   setCountdownInterval("#countdown3", new Date("2021/08/11 18:00:00"));
