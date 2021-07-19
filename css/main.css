@@ -76,8 +76,9 @@ header .top-header .search-box {
 }
 @media (max-width: 991px) {
   header .top-header .search-box {
-    width: 100%;
+    width: 95%;
     margin-top: 2em;
+    margin-left: 5px;
   }
 }
 header .top-header .search-box .search-bar {
@@ -998,7 +999,6 @@ header .single-item .slick-next {
 }
 @media (max-width: 575px) {
   .main-box .cooperation-brand {
-    flex-direction: column;
     align-items: center;
   }
 }
@@ -1150,6 +1150,7 @@ header .single-item .slick-next {
 }
 .main-box .kol-box button {
   margin-top: 44px;
+  margin-bottom: 84px;
   padding: 20px 41px;
   border-radius: 33px;
   border: solid 0.8px #f16177;
@@ -1163,6 +1164,44 @@ header .single-item .slick-next {
     font-size: 20px;
     padding: 15px 30px;
   }
+}
+
+.channel-box {
+  margin-top: 29px;
+  padding: 76px 50px 65px 50px;
+  background-color: #eeeeee;
+  border-top: 5px solid #c6c6c6;
+  border-bottom: 18px solid #c6c6c6;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (max-width: 766px) {
+  .channel-box {
+    padding: 30px 20px;
+  }
+}
+.channel-box .channel {
+  position: relative;
+  height: 60px;
+  width: 20%;
+  margin: 2%;
+  text-align: center;
+  line-height: 60px;
+}
+@media (max-width: 766px) {
+  .channel-box .channel {
+    width: 27%;
+  }
+}
+@media (max-width: 576px) {
+  .channel-box .channel {
+    width: 38%;
+  }
+}
+.channel-box .channel img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .fa-truck {
