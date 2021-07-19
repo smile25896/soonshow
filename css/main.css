@@ -19,6 +19,12 @@ body {
   }
 }
 
+@media (min-width: 576px) {
+  .only-mobile {
+    display: none;
+  }
+}
+
 .force-one-line {
   white-space: nowrap;
 }
@@ -1506,6 +1512,80 @@ header .single-item .slick-next {
 }
 .main-box .black-cat .item img {
   height: 100%;
+}
+
+footer {
+  border-top: 7px solid #f16177;
+  background-color: #005bac;
+  padding: 54px 0 33px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 801px) {
+  footer .container {
+    max-width: 920px;
+  }
+}
+@media (max-width: 800px) {
+  footer .container {
+    flex-direction: column;
+  }
+}
+footer .item {
+  margin: 0 22px;
+}
+@media (max-width: 800px) {
+  footer .item {
+    margin: 22px 30px 0;
+  }
+}
+footer .title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #fcc707;
+  margin-bottom: 17px;
+}
+@media (max-width: 1199px) {
+  footer .title {
+    font-size: 18px;
+  }
+}
+footer ul {
+  position: relative;
+  padding-left: 1em;
+}
+footer ul li {
+  font-size: 13.5px;
+  letter-spacing: 0.68px;
+  color: #ffffff;
+  margin: 12px 0;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.right-contact-box {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+.right-contact-box .circle {
+  margin: 0 auto 11px;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 61px;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+.right-contact-box .circle img {
+  width: 100%;
 }
 
 .fa-truck {
