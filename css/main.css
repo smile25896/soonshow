@@ -1199,9 +1199,6 @@ header .single-item .slick-next {
   background-color: #eeeeee;
   border-top: 5px solid #c6c6c6;
   border-bottom: 18px solid #c6c6c6;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 @media (max-width: 766px) {
   .main-box .channel-box {
@@ -1211,22 +1208,12 @@ header .single-item .slick-next {
 .main-box .channel-box .channel {
   position: relative;
   height: 60px;
-  width: 20%;
-  margin: 2%;
+  width: 100%;
   text-align: center;
   line-height: 60px;
 }
-@media (max-width: 766px) {
-  .main-box .channel-box .channel {
-    width: 27%;
-  }
-}
-@media (max-width: 576px) {
-  .main-box .channel-box .channel {
-    width: 38%;
-  }
-}
 .main-box .channel-box .channel img {
+  flex: 1;
   max-height: 100%;
   max-width: 100%;
 }

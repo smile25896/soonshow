@@ -1324,25 +1324,19 @@ header {
     @media (max-width: 766px) {
       padding: 30px 20px;
     }
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    // display: flex;
+    // justify-content: space-around;
+    // flex-wrap: wrap;
 
     .channel {
       position: relative;
       height: 60px;
-      width: 20%;
-      margin: 2%;
+      width: 100%;
+      //   margin: 2%;
       text-align: center;
       line-height: 60px;
-
-      @media (max-width: 766px) {
-        width: 27%;
-      }
-      @media (max-width: 576px) {
-        width: 38%;
-      }
       img {
+        flex: 1;
         max-height: 100%;
         max-width: 100%;
       }
