@@ -34,6 +34,11 @@ body {
   justify-content: flex-start;
 }
 
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+}
+
 body {
   font-family: NotoSansCJKtc, 微軟正黑體, sans-serif;
 }
@@ -195,6 +200,7 @@ header .top-header .member-box .option-box {
   align-items: center;
 }
 header .top-header .member-box .option-box a.option {
+  position: relative;
   text-decoration: none;
 }
 header .top-header .member-box .option-box a.option .icon-box {
@@ -213,6 +219,19 @@ header .top-header .member-box .option-box a.option .title {
   color: white;
   margin-top: 9px;
   text-align: center;
+}
+header .top-header .member-box .option-box a.option .number {
+  width: 22px;
+  color: white;
+  background-color: #ef5e5e;
+  height: 22px;
+  position: absolute;
+  top: -5px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 18px;
+  right: -5px;
+  border: 2px solid #fff;
 }
 header .top-menu {
   background-color: #d41d40;
@@ -254,6 +273,28 @@ header .second-menu .nav .nav-link.active,
 header .second-menu .nav .nav-link:hover {
   background-color: #6394dd;
 }
+header .second-menu .nav-item {
+  position: relative;
+}
+header .second-menu .nav-item:hover .dropdown-box {
+  display: block;
+}
+header .second-menu .dropdown-box {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background-color: #005bac;
+  color: white;
+  width: 100%;
+  padding-left: 0;
+}
+header .second-menu .dropdown-box li {
+  text-align: center;
+}
+header .second-menu .dropdown-box li .nav-link {
+  width: 100%;
+  padding: 1rem 0;
+}
 header .single-item {
   position: relative;
 }
@@ -267,7 +308,7 @@ header .single-item .slick-prev {
   left: 10px;
 }
 header .single-item .slick-next {
-  right: 10px;
+  right: 15px;
 }
 
 .main-box {
@@ -825,6 +866,7 @@ header .single-item .slick-next {
   color: #a31111;
 }
 .main-box .main-product-box .main-info .right-box .select-box {
+  font-size: 16px;
   padding: 0 42px;
 }
 .main-box .main-product-box .main-info .right-box .select-box select {
@@ -1031,6 +1073,7 @@ header .single-item .slick-next {
   }
 }
 .main-box .cooperation-brand .brand-item {
+  position: relative;
   width: 155px;
   height: 119px;
   margin: 4px 6px;
@@ -1064,6 +1107,33 @@ header .single-item .slick-next {
   border-width: 0;
   padding: 8px 13px;
 }
+.main-box .cooperation-brand .brand-item .black {
+  transition: opacity 0.3s;
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.main-box .cooperation-brand .brand-item .black .text {
+  display: block;
+  padding-top: calc(50% - 36px);
+}
+.main-box .cooperation-brand .brand-item .black .link {
+  display: inline-block;
+  padding: 6px 7px;
+  border-radius: 30px;
+  margin-top: 10px;
+  background-color: #e32326;
+}
+.main-box .cooperation-brand .brand-item:hover .black {
+  opacity: 1;
+}
 .main-box .gray-line {
   width: 100%;
   height: 1px;
@@ -1087,6 +1157,12 @@ header .single-item .slick-next {
 }
 .main-box .user-slider-box .slick-arrow:before {
   color: #888;
+}
+.main-box .user-slider-box .slick-prev {
+  left: -18px;
+}
+.main-box .user-slider-box .slick-next {
+  right: -13px;
 }
 @media (max-width: 599px) {
   .main-box .user-slider-box .slick-prev {
@@ -1205,6 +1281,15 @@ header .single-item .slick-next {
     padding: 30px 20px;
   }
 }
+.main-box .channel-box .slick-arrow:before {
+  color: #888;
+}
+.main-box .channel-box .slick-prev {
+  left: -31px;
+}
+.main-box .channel-box .slick-next {
+  right: -24px;
+}
 .main-box .channel-box .channel {
   position: relative;
   height: 60px;
@@ -1226,6 +1311,12 @@ header .single-item .slick-next {
 .main-box .share-slider .slick-arrow:before {
   color: #888;
 }
+.main-box .share-slider .slick-prev {
+  left: -31px;
+}
+.main-box .share-slider .slick-next {
+  right: -24px;
+}
 @media (max-width: 599px) {
   .main-box .share-slider .slick-prev {
     left: 7px;
@@ -1246,7 +1337,7 @@ header .single-item .slick-next {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 50%;
+  padding-top: 100%;
   margin: 1px;
 }
 .main-box .process-box {
