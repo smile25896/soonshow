@@ -1845,3 +1845,11 @@ footer {
 .white-bg {
   background-color: white;
 }
+
+.banner-box .img-box {
+  position: relative;
+  margin: 20px auto;
+  img {
+    width: 100%;
+  }
+}
