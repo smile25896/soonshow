@@ -1420,10 +1420,15 @@ header {
       right: -24px;
     }
 
+    .channel-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .channel {
       position: relative;
       height: 60px;
-      width: 100%;
       //   margin: 2%;
       text-align: center;
       line-height: 60px;
