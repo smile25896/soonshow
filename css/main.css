@@ -1408,6 +1408,7 @@ header .single-item .slick-next {
   .main-box .process-box {
     flex-direction: column;
     align-items: center;
+    margin: 54px 0;
   }
   .main-box .process-box .process-item {
     flex: 1;
