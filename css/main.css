@@ -304,8 +304,14 @@ header .second-menu .dropdown-box li .nav-link {
 header .single-item {
   position: relative;
 }
-header .single-item img {
-  width: 100%;
+header .single-item .image-box {
+  position: relative;
+}
+header .single-item .image-box .image {
+  padding-top: 53%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 header .single-item .slick-arrow {
   z-index: 1;

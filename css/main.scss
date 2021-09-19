@@ -367,9 +367,22 @@ header {
 
   .single-item {
     position: relative;
-    img {
-      width: 100%;
+
+    .image-box {
+      position: relative;
+
+      .image {
+        padding-top: 53%;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
+
+    // img {
+    //   width: 100%;
+    // }
     .slick-arrow {
       z-index: 1;
     }
